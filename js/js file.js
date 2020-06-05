@@ -135,7 +135,7 @@ $.getJSON("https://api.covid19api.com/summary",function(data){
 
     for(i=0 ; i<248 ; i++)
     {  
-        document.getElementById("all").innerHTML += "<div class='col-3 my-4 text-center '>" +
+        document.getElementById("all").innerHTML += "<div class='col-lg-3 my-4 text-center '>" +
         "<div class=' p-2 cell h-100'>" +
         "<img src='https://www.countryflags.io/" + data.Countries[i].CountryCode   +"/shiny/48.png' class='rounded'>" +"</img>"+
         "<h1>" + data.Countries[i].Country       + "</h1>" + 
