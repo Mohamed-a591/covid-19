@@ -80,13 +80,13 @@ ipcountry.onkeyup =function(){
         if(country == data.Countries[i].Slug | country == data.Countries[i].Country | country == data.Countries[i].CountryCode)
         {
             
-            document.getElementById("for-searsh").innerHTML  =  "<div class='col-3 text-center' >"+
+            document.getElementById("for-searsh").innerHTML  =  "<div class='col-lg-3 text-center' >"+
             "<div >" +
                 "<img src='https://www.countryflags.io/" + data.Countries[i].CountryCode + "/shiny/48.png'  >"+
                 "<h1>" + data.Countries[i].Country + "</h1>" +
             "</div>" +
         "</div>" +
-        "<div class='col-9'>" +
+        "<div class='col-lg-9'>" +
             "<div class='row'>" +
                 "<div class='col-4 text-center'>" +
                     "<div class='mb-5' >" +
