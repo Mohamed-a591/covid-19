@@ -13,13 +13,13 @@ $.getJSON("https://api.covid19api.com/summary",function(data){
             {
                 
                 document.getElementById("for-searsh").innerHTML  =
-                "<div class='col-3 text-center' >"+
+                "<div class='col-lg-3 text-center' >"+
                     "<div>" +
                         "<img  src='https://www.countryflags.io/" + data.Countries[i].CountryCode + "/shiny/48.png'  >"+
                         "<h1>" + data.Countries[i].Country + "</h1>" +
                     "</div>" +
                 "</div>" +
-                "<div class='col-9'>" +
+                "<div class='col-lg-9'>" +
                     "<div class='row'>" +
                         "<div class='col-4 text-center'>" +
                             "<div class='mb-5'>" +
@@ -58,7 +58,7 @@ $.getJSON("https://api.covid19api.com/summary",function(data){
                     "</div>" +
                 "</div>" +
                 "<div class='col-12 pt-2'>" +
-                    "<p class=' text-left'>Date : " +  data.Countries[i].Date + "</p>" +
+                    "<p class=' text-left text-center'>Date : " +  data.Countries[i].Date + "</p>" +
                 "</div>" ;
             
                 break ;
